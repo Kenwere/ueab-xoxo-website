@@ -1,0 +1,173 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>UEAB XOXO — University Social App</title>
+  <meta name="description" content="UEAB XOXO is a lightweight social app for University of Eastern Africa, Baraton students — share posts, chat, join events and stay connected." />
+  <style>
+    :root{--accent:#e53935;--muted:#6b7280;--bg:#f7f7fa;--card:#ffffff}
+    *{box-sizing:border-box}
+    body{font-family:Inter,system-ui,Segoe UI,Roboto,'Helvetica Neue',Arial,sans-serif;margin:0;background:linear-gradient(180deg,#fbfbfd, #f2f4f8);color:#0f1724}
+    header{background:var(--card);border-bottom:1px solid #eef2f7;position:sticky;top:0;z-index:20}
+    .container{max-width:980px;margin:0 auto;padding:28px}
+    .nav{display:flex;align-items:center;gap:20px}
+    .brand{display:flex;align-items:center;gap:12px}
+    .logo{width:48px;height:48px;border-radius:10px;background:linear-gradient(135deg,#ff8a65,#ff5252);display:flex;align-items:center;justify-content:center;color:white;font-weight:700}
+    .hero{display:grid;grid-template-columns:1fr 420px;gap:32px;align-items:center;padding:48px 0}
+    h1{font-size:28px;margin:0}
+    p.lead{color:var(--muted);margin-top:10px;line-height:1.5}
+    .cta{display:flex;gap:12px;margin-top:18px}
+    .btn{background:var(--accent);color:white;padding:12px 18px;border-radius:12px;text-decoration:none;font-weight:600;box-shadow:0 6px 18px rgba(229,57,53,.12);display:inline-flex;align-items:center;gap:10px}
+    .btn.secondary{background:transparent;color:var(--accent);border:1px solid rgba(229,57,53,.12)}
+    .card{background:var(--card);padding:20px;border-radius:14px;box-shadow:0 8px 30px rgba(18,23,40,.04)}
+    .features{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:20px}
+    .feature{padding:16px;border-radius:12px;background:linear-gradient(180deg,#fff,#fbfcff);border:1px solid #f1f5f9}
+    .feature h3{margin:6px 0 0;font-size:15px}
+    .how{margin-top:36px;display:grid;grid-template-columns:1fr 1fr;gap:18px}
+    ol{padding-left:18px}
+    footer{padding:28px 0;color:var(--muted)}
+    .screenshot{width:100%;height:300px;border-radius:10px;background:linear-gradient(135deg,#f8fafc,#eef2f7);display:flex;align-items:center;justify-content:center;color:var(--muted);font-weight:600}
+    @media (max-width:900px){.hero{grid-template-columns:1fr;}.features{grid-template-columns:repeat(2,1fr)}.how{grid-template-columns:1fr}}
+    @media (max-width:560px){.features{grid-template-columns:1fr}header .container{padding:16px}}
+  </style>
+</head>
+<body>
+  <header>
+    <div class="container nav">
+      <div class="brand">
+        <div class="logo">UE</div>
+        <div>
+          <div style="font-weight:700">UEAB XOXO</div>
+          <div style="font-size:12px;color:var(--muted)">University of Eastern Africa, Baraton social app</div>
+        </div>
+      </div>
+      <nav style="margin-left:auto;display:flex;gap:12px;align-items:center">
+        <a class="btn secondary" href="#features">Features</a>
+        <a class="btn secondary" href="#how">How to use</a>
+        <a class="btn" href="#download">Download</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="hero">
+      <div>
+        <h1>UEAB XOXO — Connect. Share. Celebrate campus life.</h1>
+        <p class="lead">A lightweight, private social app built for University of Eastern Africa, Baraton students. Share updates, join events, chat with classmates, and discover campus news — all in one secure app.</p>
+
+        <div class="cta">
+          <a class="btn" id="download" href="/downloads/ueab-xoxo.apk" download>
+            Download App
+          </a>
+          <a class="btn secondary" href="#how">Learn how to use</a>
+        </div>
+
+        <div class="card" style="margin-top:22px">
+          <strong>Quick facts</strong>
+          <div style="font-size:13px;color:var(--muted);margin-top:8px">Private student network • Lightweight (under 30MB) • Works offline with cached posts • Built with Flutter & Firebase</div>
+        </div>
+
+        <section id="features" style="margin-top:26px">
+          <h2 style="margin:0 0 12px">Key Features</h2>
+          <div class="features">
+            <div class="feature">
+              <strong>Campus Feed</strong>
+              <h3>Share posts, images and polls with classmates.</h3>
+            </div>
+            <div class="feature">
+              <strong>Private Chat</strong>
+              <h3>Direct messaging and group chats for project teams.</h3>
+            </div>
+            <div class="feature">
+              <strong>Events & Clubs</strong>
+              <h3>Discover upcoming events and RSVP with one tap.</h3>
+            </div>
+            <div class="feature">
+              <strong>Offline Support</strong>
+              <h3>Read cached posts and queue actions while offline.</h3>
+            </div>
+            <div class="feature">
+              <strong>Push Notifications</strong>
+              <h3>Get notified for likes, messages and event updates.</h3>
+            </div>
+            <div class="feature">
+              <strong>Student Profiles</strong>
+              <h3>Create a profile, follow peers and manage privacy settings.</h3>
+            </div>
+          </div>
+        </section>
+      </div>
+
+      <aside>
+        <div class="card">
+          <div class="screenshot">App screenshot preview</div>
+          <div style="margin-top:14px;display:flex;gap:10px;justify-content:space-between;align-items:center">
+            <div>
+              <div style="font-weight:700">Latest build</div>
+              <div style="font-size:13px;color:var(--muted)">Version 1.0 • 28 MB</div>
+            </div>
+            <a class="btn" href="/downloads/ueab-xoxo.apk" download>Download APK</a>
+          </div>
+        </div>
+
+        <div class="card" style="margin-top:16px">
+          <strong>Permissions</strong>
+          <div style="font-size:13px;color:var(--muted);margin-top:8px">Camera, storage, internet, push notifications (used for profile photos, uploads and real-time updates).</div>
+        </div>
+      </aside>
+    </section>
+
+    <section id="how" class="how">
+      <div class="card">
+        <h2 style="margin-top:0">How to use UEAB XOXO</h2>
+        <ol>
+          <li><strong>Download the app:</strong> Tap the "Download App" button above and install the APK (Android). On first install, you may need to allow installs from unknown sources.</li>
+          <li><strong>Create an account:</strong> Register using your university email. Verify your email from the link sent to you.</li>
+          <li><strong>Set up your profile:</strong> Add name, photo and program year so classmates can find you.</li>
+          <li><strong>Join or create events:</strong> Browse Events, RSVP, or create your own and invite friends.</li>
+          <li><strong>Chat and share:</strong> Post updates to the Campus Feed, like and comment — get notified of interactions.</li>
+        </ol>
+        <p style="color:var(--muted);font-size:13px;margin-top:8px">If you have issues installing the APK, email <a href="mailto:moonwavestudios467@gmail.com">moonwavestudios467@gmail.com</a>.</p>
+      </div>
+
+      <div class="card">
+        <h3 style="margin-top:0">Installation notes</h3>
+        <ul style="color:var(--muted);font-size:14px">
+          <li>Android only: APK available directly from this page. iOS distribution requires App Store submission.</li>
+          <li>App size: ~28 MB. Works on Android 7.0+.</li>
+          <li>Privacy: Student-only network — we do not sell personal data.</li>
+        </ul>
+
+        <h3 style="margin-top:12px">Support</h3>
+        <p style="color:var(--muted);font-size:13px">For bugs or feature requests, contact the dev team at <a href="mailto:moonwavestudios467@gmail.com">moonwavestudios467@gmail.com</a>.</p>
+      </div>
+    </section>
+
+    <section style="margin-top:26px" class="card">
+      <h3 style="margin-top:0">Frequently asked</h3>
+      <div style="display:grid;grid-template-columns:1fr 1fr;gap:12px">
+        <div>
+          <strong>Is my university email required?</strong>
+          <div style="color:var(--muted);font-size:13px">Yes — sign up with your institutional email to confirm you're a student.</div>
+        </div>
+        <div>
+          <strong>How do I report abuse?</strong>
+          <div style="color:var(--muted);font-size:13px">Open the post → tap "Report" → choose the reason. Admins will review within 24–48 hours.</div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer>
+    <div class="container">
+      <div style="display:flex;justify-content:space-between;align-items:center;gap:12px;flex-wrap:wrap">
+        <div style="font-size:14px">© UEAB XOXO — Moon Wave Studios</div>
+        <div style="color:var(--muted);font-size:13px">• Privacy-first • For students</div>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>
